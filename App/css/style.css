@@ -1,0 +1,50 @@
+body {
+	background-color: #cecece;
+}
+
+.send-btn {
+	margin-top: 50px;
+	background-color: #7D3F43 !important;
+}
+.loc-btn {
+margin-top: 5px;
+	background-color: #7D3F43 !important;
+}
+
+
+input:focus {
+	border-bottom: 1px solid #7D3F43 !important;
+    box-shadow: 0 1px 0 0 #7D3F43 !important;
+}
+
+.input-data {
+	margin-bottom: 25px;
+}
+
+.project-label {
+	font-size: 12px !important;
+    padding-left: 35px;
+    color: #e65100;
+}
+
+.header {
+	padding-top: 15vh;
+	background-color: #009688;
+	height: 100vh;
+	/*overflow: hidden;*/
+}
+
+.jewki {
+	background-color: #fff;
+	width: 100%;
+	height: 100%;
+}
+
+.select-wrapper span.caret{
+	display: none !important;
+}
+
+.filter input{
+	margin: 0 !important;
+	border: none !important;
+}

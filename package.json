@@ -1,0 +1,22 @@
+{
+  "name": "ProjectName",
+  "version": "0.0.1",
+  "dependencies": {
+    "array-query": "^0.1.2",
+    "body-parser": "^1.15.2",
+    "dotenv": "^2.0.0",
+    "express": "^4.10.6",
+    "json-query": "^2.2.0",
+    "jsonfile": "^2.3.1",
+    "nodemailer": "^2.6.0",
+    "nodemailer-mandrill-transport": "^1.2.0",
+    "nodemailer-smtp-transport": "^2.7.2"
+  },
+  "engines": {
+    "node": ">=0.12.0"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "main": "server.js"
+}

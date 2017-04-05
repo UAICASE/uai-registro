@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>UAI</title>
+
+	<!-- Mobile view -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="robots" content="noindex,nofollow">
+
+	<!-- Compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+
+	<!-- Customs styles -->
+	<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body ng-app="EmailSender">
+
+	<div ng-controller="MainCtrl" ng-init="step0=true;step1=false;step2=false">
+
+		<div class="container-fluid">
+			<div class="text-center" >
+
+				<div class="col-xs-12 col-sm-12 col-md-6 col-md-offset-3 jumbotron" ng-hide="sendSuccess">
+					<form name="myForm">
+						<img src="/img/logo.png" />
+						<h3> Universidad Abierta Interamericana </h3>
+						<div class="alert alert-info"  role="alert">PRESENTACIÓN DE CÉLULAS TECNOLÓGICAS EXTERNAS</div>
+						
+						
+						<div id="localizacion" ng-show="step0 && !step1 && !step2">
+						
+							<div class="well well-lg">
+								Seleccioná tu Localización
+							</div>
+						
+							<button ng-click="setLocalizacion('Centro')" 
+									class="col-sm-12 col-xs-12 col-md-12 btn btn-primary loc-btn">
+									Centro
+							</button>			
+							<button ng-click="setLocalizacion('Norte')" 
+									class="col-sm-12 col-xs-12  col-md-12 btn btn-primary loc-btn">
+									Norte
+							</button>			
+							<button ng-click="setLocalizacion('Oeste')" 
+									class="col-sm-12 col-xs-12  col-md-12 btn btn-primary loc-btn">
+									Oeste
+							</button>			
+							<button ng-click="setLocalizacion('Sur')" 
+									class="col-sm-12 col-xs-12 col-md-12 btn btn-primary loc-btn">
+									Sur
+							</button>			
+											
+						</div>
+						
+						<div id="datos" ng-show="step1 && !step2" >
+						<div class="well well-lg">Ingresá tus datos de contacto</div>
+						
+						<div class="form-group">
+							<input required type="text" class="form-control" ng-model="sendData.user.name" placeholder="Nombre y Apellido" />
+						</div>
+						
+						<div class="form-group">
+						
+							<input required type="email" class="form-control" ng-model="sendData.user.mail" placeholder="Email" />
+						
+						</div>
+						
+						
+						
+						<button ng-click="step0=true;step1=false;step2=false;"  class="btn btn-primary send-btn" >Volver</button>
+						<button ng-click="validate()"  class="btn btn-primary send-btn" type="submit" ng-disabled="!myForm.$valid">Continuar</button>
+						
+						</div>
+						
+						<div id="proyectos" ng-show="step2 && !step1">
+						<div class="well well-lg">
+						Seleccioná los proyectos que más te interesan de la localización {{sendData.localization | uppercase}}
+						</div>
+						<h4>Proyecto de interes:</h4>
+							<div class="col-md-12 input-data text-left" ng-repeat="i in items" >
+								 <input type="checkbox" 
+								 		id="{{i.id}}"
+								 		ng-model="selected[i.id]" 
+										ng-disabled="validProject(i.id)" 
+								 />
+								 
+      							<label for="{{i.id}}">{{i.name}} <div class="small"> Director: {{i.director}}</div></label>
+      							<p ng-show="renderProjectLabel(i.id)" class="project-label">Usted ya envio informacion acerca de este proyecto</p>
+							</div>
+							
+							
+							
+							
+							<button ng-click="step1=true;step2=!step1;"  
+									class="btn btn-primary send-btn" 
+									type="submit" 
+									ng-disabled="!myForm.$valid ">
+									Volver
+							</button>
+							<button ng-click="send()"
+									type="submit" 
+									class="btn btn-primary send-btn" 
+									type="submit" 
+									ng-disabled="!myForm.$valid || sendingMail || !valid() ">
+									Finalizar 
+							</button>				
+						</div>
+				
+					</form>	
+				</div>
+				<div class="col-md-6 col-md-offset-3 jumbotron" ng-hide="!sendSuccess">
+					
+					<br/>
+					<div class="col-md-12">
+						<div class="alert alert-success"  role="alert">Muchas Gracias!</div>
+		
+			<div class="well well-lg">
+						Pronto recibirás información de tu interés!
+						</div>
+		
+						<div class="span1">
+						<img src="/img/logo.png" />					
+						</div>
+					
+
+							<button onClick="location.href ='/'"  class="btn btn-primary send-btn" >
+									Volver
+							</button>			
+					</div>
+				</div>
+
+			</div>
+			
+		</div>
+	</div>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+	<!-- Firebase -->
+	<script src="https://cdn.firebase.com/js/client/2.2.4/firebase.js"></script>
+	<!-- AngularFire -->
+	<script src="https://cdn.firebase.com/libs/angularfire/1.2.0/angularfire.min.js"></script>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular-cookies.js"></script>
+	
+
+	<script src="js/controller.js" ></script>
+	
+	<script>
+		$(document).ready(function() {
+	    	$('select').material_select();
+
+	  	});
+	</script>
+</body>
+
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>UAI</title>
+
+	<!-- Mobile view -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="robots" content="noindex,nofollow">
+
+	<!-- Compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+
+	<!-- Customs styles -->
+	<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body ng-app="EmailSender" style="background-color: #fff">
+
+	<div ng-controller="AdminCtrl" class="header">
+		<div class="jewki">
+			
+		
+		<div class="">
+			 <table class="col-md-8 col-md-offset-1">
+		        <thead>
+		          <tr>
+		              <th data-field="id">Alumno</th>
+		              <th data-field="name">Email</th>
+		              <th data-field="price">
+						<select ng-model="projectFilter" class="filter">
+					      <option value="" disabled selected>Cede</option>
+					      <option value="centro">centro</option>
+					      <option value="norte">norte</option>
+					      <option value="sur">sur</option>
+					      <option value="oeste">oeste</option>
+					    </select>
+		              </th>
+		              <th data-field="price">
+		              	<select class="filter">
+					      <option value="" disabled selected>Proyecto</option>
+					      <option value="1">Option 1</option>
+					    </select>
+		              </th>
+		          </tr>
+		        </thead>
+
+		        <tbody>
+		          <tr ng-repeat="res in results | filter : projectFilter">
+		            <td>{{ res.user.name }}</td>
+		            <td>{{ res.user.mail }}</td>
+		            <td>{{ res.localization }}</td>
+		            <td style="width:35%">
+		            	<span ng-repeat="i in res.items">{{ renameProject(i) }}.  </span>
+		            </td>
+		          </tr>
+		        </tbody>
+		      </table>
+		      <div class="col-md-3">
+			      <div class="card blue-grey darken-1">
+		            <div class="card-content white-text">
+		              <span class="card-title">Mails Enviados: {{ mailSended }}</span>
+		            </div>
+		          </div>
+		          <div class="card blue-grey darken-1">
+		            <div class="card-content white-text">
+		              <span class="card-title">Enviados por cedes:</span>
+		              <p>Centro : {{centro}}</p>
+		              <p>Norte : {{norte}}</p>
+		              <p>Sur : {{sur}}</p>
+		              <p>Oeste : {{oeste}}</p>
+		            </div>
+		          </div>
+		      </div>    
+		</div>
+
+		</div>
+	</div>
+
+	
+
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+	<!-- Firebase -->
+	<script src="https://cdn.firebase.com/js/client/2.2.4/firebase.js"></script>
+	<!-- AngularFire -->
+	<script src="https://cdn.firebase.com/libs/angularfire/1.2.0/angularfire.min.js"></script>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular-cookies.js"></script>
+	
+
+	<script src="js/controller.js" ></script>
+	
+	<script>
+		$(document).ready(function() {
+	    	$('select').material_select();
+
+	  	});
+	</script>
+</body>
+</html>
