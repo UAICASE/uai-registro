@@ -63,6 +63,9 @@ function sendEmail(req, res) {
     
 	var data = req.body;
 
+	console.log(process.env.GmailUser)
+	console.log(process.env.GmailPass)
+
 	var transport = nodemailer.createTransport({
 		service: 'Gmail',
 		auth: {
@@ -91,7 +94,7 @@ function sendEmail(req, res) {
 	
 	
 	 var mailOptions = {
-	    from: 'UAI <uai.case.registros@gmail.com>', 
+	    from: 'UAI <uai.case.info@gmail.com>', 
 	    to: dest,
 		cc:"1carlos.neil@uai.edu.ar; 1medevincenzi@uai.edu.ar",
 	    subject: "PRESENTACIÃ“N DE CÃ‰LULAS TECNOLÃ“GICAS EXTERNAS",
@@ -107,6 +110,7 @@ function sendEmail(req, res) {
 	    }else{
 	        
 	        logStudents(req.body);
+			console.log(info)
 	        res.redirect('/');
 	    };
 	});    
