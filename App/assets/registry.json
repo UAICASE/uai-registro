@@ -1,0 +1,188 @@
+{
+  "mails" : [
+    {
+      "items" : [ 
+        
+        5, 6, 7 
+      ],
+      "localization" : "Centro",
+      "user" : {
+        "mail" : "m.d.sola@gmail.com",
+        "name" : "Marcelo sola"
+      }
+    },
+    {
+      "items" : [ 7 ],
+      "localization" : "Centro",
+      "user" : {
+        "mail" : "marcelolema@yahoo.com.ar",
+        "name" : "Marce Lema"
+      }
+    },
+    {
+      "items" : [ 2, 7 ],
+      "localization" : "Centro",
+      "user" : {
+        "mail" : "aslegui@gmail.com",
+        "name" : "Alejandro Leguizamon"
+      }
+    },
+    {
+      "items" : [ 3, 5 ],
+      "localization" : "Centro",
+      "user" : {
+        "mail" : "sanguinmartin@gmail.com",
+        "name" : "Martin Sanguin"
+      }
+    },
+    {
+      "items" : [ 
+        {
+          "id" : "1",
+          "name" : "Herramientas Colaborativas Multiplataforma en la Enseñanza de la Ingeniería de Software",
+          "director" : "Dr. Carlos Neil / Dr. Marcelo De Vincenzi / Ing. Nicolas Battaglia",
+          "mail" : "nicolas.battaglia@uai.edu.ar",
+          "localization":"centro"
+        },
+        {
+          "id" : "2",
+          "name" : "Interfaces naturales como complemento educativo, cognitivo y social en personas que padecen TEA",
+          "director" : "Lic. Victor Contreras / Dra. Clauda Pons",
+          "mail" : "1claudia.pons@uai.edu.ar; 1victor.contreras@uai.edu.ar",
+          "localization":"centro"
+        },
+        {
+          "id" : "3",
+          "name" : "Diseño y desarrollo de interfaces con interacción física utilizando dispositivos móviles.",
+          "director" : "Dr. Pablo Vera / Mg. Roxana Martinez",
+          "mail" : "1ingpvera@gmail.com; 1ing.roxana.martinez@uai.edu.ar",
+          "localization":"centro"
+        },
+        {
+          "id" : "4",
+          "name" : "Bioinformática en oncogenómica funcional",
+          "director" : "Ms Sc. Matías Daniel Butti",
+          "mail" : "1matias.butti@uai.edu.ar",
+          "localization":"centro"
+        },
+        {
+          "id" : "5",
+          "name" : "Investigación y desarrollo de aplicaciones móviles utilizando los sensores de los dispositivos",
+          "director" : "Dra. Rocío Andrea Rodriguez / Mg Roxana Martinez",
+          "mail" : "1rocioandrearodriguez@gmail.com; 1roxana.martinez@uai.edu.ar",
+          "localization":"centro"
+        },
+        
+        {
+          "id" : "6",
+          "name" : " Herra mientas de análisis de imágenes digitales para la visión artificial",
+          "director" : "Dra. María Lorena Bergamini / Javier Liberczuk ",
+          "mail" : "1maria.bergaminu@uai.edu.ar",
+          "localization":"centro"
+        },
+        {
+          "id" : "7",
+          "name" : "  Interfaces naturales hombre-robot basadas en Kinect",
+          "director" : "Mg. Nestor Balich",
+          "mail" : "1nestor.balich@uai.edu.ar",
+          "localization":"centro"
+        } 
+    ],
+      "localization" : "Centro",
+      "user" : {
+        "mail" : "lula@hotmail.com",
+        "name" : "Esteban Quito"
+      }
+    },
+    {
+      "items" : [ 5 ],
+      "localization" : "Centro",
+      "user" : {
+        "mail" : "ldonato22@gmail.com",
+        "name" : "Leonardo Donato"
+      }
+    },
+    {
+      "items" : [ 2 ],
+      "localization" : "Centro",
+      "user" : {
+        "mail" : "lucianarodriguezcaldeira@hotmail.com",
+        "name" : "LUCIANA"
+      }
+    },
+    {
+      "items" : [ 
+        4 
+      ],
+      "localization" : "Centro",
+      "user" : {
+        "mail" : "sergiomatavos@gmail.com",
+        "name" : "Sergio Matavós"
+      }
+    },
+    {
+      "items" : [ 14, 16 ],
+      "localization" : "Centro",
+      "user" : {
+        "mail" : "cevales@gmail.com",
+        "name" : "Esteban Vales"
+      }
+    },
+    {
+      "items" : [ 3, 7, 4 ],
+      "localization" : "Centro",
+      "user" : {
+        "mail" : "cristian.a.caterino@gmail.com",
+        "name" : "Cristian Caterino"
+      }
+    },
+    {
+      "items" : [ 3 ],
+      "localization" : "Centro",
+      "user" : {
+        "mail" : "seba81@gmail.com",
+        "name" : "Sebastian Schiuma"
+      }
+    },
+    {
+      "items" : [ 4, 7 ],
+      "localization" : "Centro",
+      "user" : {
+        "mail" : "german.kuber@outlook.com",
+        "name" : "German Kuber"
+      }
+    },
+    {
+      "items" : [ 2, 4, 6 ],
+      "localization" : "Centro",
+      "user" : {
+        "mail" : "schivardi1@outlook.com",
+        "name" : "Franco Schivardi"
+      }
+    },
+    {
+      "items" : [ 3, 5 ],
+      "localization" : "Centro",
+      "user" : {
+        "mail" : "estherquispe@gmail.com",
+        "name" : "Esther Quispe"
+      }
+    },
+    {
+      "items" : [ 14 ],
+      "localization" : "Oeste",
+      "user" : {
+        "mail" : "fernando.frecha@gmail.com",
+        "name" : "Fernando Javier Frecha"
+      }
+    },
+    {
+      "items" : [ 12 ],
+      "localization" : "Oeste",
+      "user" : {
+        "mail" : "fvilela@gmail.com",
+        "name" : "Felipe"
+      }
+    },
+  ]
+}
