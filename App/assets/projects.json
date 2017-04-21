@@ -11,28 +11,28 @@
 			"id" : "2",
 			"name" : "Interfaces naturales como complemento educativo, cognitivo y social en personas que padecen TEA",
 			"director" : "Lic. Victor Contreras / Dra. Clauda Pons",
-			"mail" : "1claudia.pons@uai.edu.ar; 1victor.contreras@uai.edu.ar",
+			"mail" : "claudia.pons@uai.edu.ar; victor.contreras@uai.edu.ar",
 			"localization":"centro"
 		},
 		{
 			"id" : "3",
 			"name" : "Diseño y desarrollo de interfaces con interacción física utilizando dispositivos móviles.",
 			"director" : "Dr. Pablo Vera / Mg. Roxana Martinez",
-			"mail" : "1ingpvera@gmail.com; 1ing.roxana.martinez@uai.edu.ar",
+			"mail" : "ingpvera@gmail.com; ing.roxana.martinez@uai.edu.ar",
 			"localization":"centro"
 		},
 		{
 			"id" : "4",
 			"name" : "Bioinformática en oncogenómica funcional",
 			"director" : "Ms Sc. Matías Daniel Butti",
-			"mail" : "1matias.butti@uai.edu.ar",
+			"mail" : "matias.butti@uai.edu.ar",
 			"localization":"centro"
 		},
 		{
 			"id" : "5",
 			"name" : "Investigación y desarrollo de aplicaciones móviles utilizando los sensores de los dispositivos",
 			"director" : "Dra. Rocío Andrea Rodriguez / Mg Roxana Martinez",
-			"mail" : "1rocioandrearodriguez@gmail.com; 1roxana.martinez@uai.edu.ar",
+			"mail" : "rocioandrearodriguez@gmail.com; roxana.martinez@uai.edu.ar",
 			"localization":"centro"
 		},
 		
@@ -40,14 +40,14 @@
 			"id" : "6",
 			"name" : " Herra mientas de análisis de imágenes digitales para la visión artificial",
 			"director" : "Dra. María Lorena Bergamini / Javier Liberczuk ",
-			"mail" : "1maria.bergaminu@uai.edu.ar",
+			"mail" : "maria.bergaminu@uai.edu.ar",
 			"localization":"centro"
 		},
 		{
 			"id" : "7",
 			"name" : "  Interfaces naturales hombre-robot basadas en Kinect",
 			"director" : "Mg. Nestor Balich",
-			"mail" : "1nestor.balich@uai.edu.ar",
+			"mail" : "nestor.balich@uai.edu.ar",
 			"localization":"centro"
 		},
 		
@@ -55,49 +55,49 @@
 			"id" : "8",
 			"name" : "Ciberdefensa de infraestructuras industriales",
 			"director" : "Esp. Lic. Jorge Alejandro Kamlofsky / Dra. Samira Abdel Masih",
-			"mail" : "1Jorge.Kamlofsky@UAI.edu.ar; abdel.masih@hotmail.com",
+			"mail" : "Jorge.Kamlofsky@UAI.edu.ar; abdel.masih@hotmail.com",
 			"localization":"sur"
 		},
 		{
 			"id" : "9",
 			"name" : "Bioinformática en oncogenómica funcional",
 			"director" : "Ms Sc. Matías Daniel Butti",
-			"mail" : "1matias.butti@uai.edu.ar",
+			"mail" : "matias.butti@uai.edu.ar",
 			"localization":"sur"
 		},
 		{
 			"id" : "10",
 			"name" : " Herra mientas de análisis de imágenes digitales para la visión artificial",
 			"director" : "Dra. María Lorena Bergamini / Javier Liberczuk ",
-			"mail" : "1maria.bergaminu@uai.edu.ar; xigani@yahoo.com.ar",
+			"mail" : "maria.bergaminu@uai.edu.ar; xigani@yahoo.com.ar",
 			"localization":"sur"
 		},
 		{
 			"id" : "11",
 			"name" : "  Interfaces naturales hombre- robot basadas en Kinect",
 			"director" : "Mg. Nestor Balich",
-			"mail" : "1nestor.balich@uai.edu.ar; jorge.martinez@uai.edu.ar",
+			"mail" : "nestor.balich@uai.edu.ar; jorge.martinez@uai.edu.ar",
 			"localization":"sur"
 		},
 		{
 			"id" : "12",
 			"name" : "Interfaces naturales como complemento educativo, cognitivo y social en personas que padecen TEA",
 			"director" : "Lic. Victor Contreras / Dra. Clauda Pons",
-			"mail" : "1claudia.pons@uai.edu.ar; 1victor.contreras@uai.edu.ar",
+			"mail" : "claudia.pons@uai.edu.ar; victor.contreras@uai.edu.ar",
 			"localization":"oeste"
 		},
 		{
 			"id" : "13",
 			"name" : "Diseño y desarrollo de interfaces con interacción física utilizando dispositivos móviles.",
 			"director" : "Dr. Pablo Vera / Mg. Roxana Martinez",
-			"mail" : "1ingpvera@gmail.com",
+			"mail" : "ingpvera@gmail.com",
 			"localization":"oeste"
 		},
 		{
 			"id" : "14",
 			"name" : "Investigación y desarrollo de aplicaciones móviles utilizando los sensores de los dispositivos",
 			"director" : "Dra. Rocío Andrea Rodriguez / Mg Roxana Martinez",
-			"mail" : "1rocioandrearodriguez@gmail.com",
+			"mail" : "rocioandrearodriguez@gmail.com",
 			"localization":"oeste"
 		},
 		{
@@ -111,14 +111,14 @@
 			"id" : "16",
 			"name" : "Ciberdefensa de infraestructuras industriales",
 			"director" : "Esp. Lic. Jorge Alejandro Kamlofsky / Dra. Samira Abdel Masih",
-			"mail" : "Jorge.Kamlofsky@UAI.edu.ar; abdel.masih@hotmail.com",
+			"mail" : "jorge.Kamlofsky@UAI.edu.ar; abdel.masih@hotmail.com",
 			"localization":"norte"
 		},
 		{
 			"id" : "17",
 			"name" : "  Interfaces naturales hombre- robot basadas en Kinect",
 			"director" : "Mg. Nestor Balich",
-			"mail" : "1nestor.balich@uai.edu.ar; jorge.martinez@uai.edu.ar",
+			"mail" : "nestor.balich@uai.edu.ar; jorge.martinez@uai.edu.ar",
 			"localization":"norte"
 		}
 		

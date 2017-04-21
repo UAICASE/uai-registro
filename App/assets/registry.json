@@ -1,188 +1,316 @@
 {
   "mails" : [
-    {
-      "items" : [ 
-        
-        5, 6, 7 
-      ],
-      "localization" : "Centro",
-      "user" : {
-        "mail" : "m.d.sola@gmail.com",
-        "name" : "Marcelo sola"
-      }
-    },
-    {
-      "items" : [ 7 ],
-      "localization" : "Centro",
-      "user" : {
-        "mail" : "marcelolema@yahoo.com.ar",
-        "name" : "Marce Lema"
-      }
-    },
-    {
-      "items" : [ 2, 7 ],
-      "localization" : "Centro",
-      "user" : {
-        "mail" : "aslegui@gmail.com",
-        "name" : "Alejandro Leguizamon"
-      }
-    },
-    {
-      "items" : [ 3, 5 ],
-      "localization" : "Centro",
-      "user" : {
-        "mail" : "sanguinmartin@gmail.com",
-        "name" : "Martin Sanguin"
-      }
-    },
-    {
-      "items" : [ 
-        {
-          "id" : "1",
-          "name" : "Herramientas Colaborativas Multiplataforma en la Enseñanza de la Ingeniería de Software",
-          "director" : "Dr. Carlos Neil / Dr. Marcelo De Vincenzi / Ing. Nicolas Battaglia",
-          "mail" : "nicolas.battaglia@uai.edu.ar",
-          "localization":"centro"
-        },
-        {
-          "id" : "2",
-          "name" : "Interfaces naturales como complemento educativo, cognitivo y social en personas que padecen TEA",
-          "director" : "Lic. Victor Contreras / Dra. Clauda Pons",
-          "mail" : "1claudia.pons@uai.edu.ar; 1victor.contreras@uai.edu.ar",
-          "localization":"centro"
-        },
-        {
-          "id" : "3",
-          "name" : "Diseño y desarrollo de interfaces con interacción física utilizando dispositivos móviles.",
-          "director" : "Dr. Pablo Vera / Mg. Roxana Martinez",
-          "mail" : "1ingpvera@gmail.com; 1ing.roxana.martinez@uai.edu.ar",
-          "localization":"centro"
-        },
-        {
-          "id" : "4",
-          "name" : "Bioinformática en oncogenómica funcional",
-          "director" : "Ms Sc. Matías Daniel Butti",
-          "mail" : "1matias.butti@uai.edu.ar",
-          "localization":"centro"
-        },
-        {
-          "id" : "5",
-          "name" : "Investigación y desarrollo de aplicaciones móviles utilizando los sensores de los dispositivos",
-          "director" : "Dra. Rocío Andrea Rodriguez / Mg Roxana Martinez",
-          "mail" : "1rocioandrearodriguez@gmail.com; 1roxana.martinez@uai.edu.ar",
-          "localization":"centro"
-        },
-        
-        {
-          "id" : "6",
-          "name" : " Herra mientas de análisis de imágenes digitales para la visión artificial",
-          "director" : "Dra. María Lorena Bergamini / Javier Liberczuk ",
-          "mail" : "1maria.bergaminu@uai.edu.ar",
-          "localization":"centro"
-        },
-        {
-          "id" : "7",
-          "name" : "  Interfaces naturales hombre-robot basadas en Kinect",
-          "director" : "Mg. Nestor Balich",
-          "mail" : "1nestor.balich@uai.edu.ar",
-          "localization":"centro"
-        } 
-    ],
-      "localization" : "Centro",
-      "user" : {
-        "mail" : "lula@hotmail.com",
-        "name" : "Esteban Quito"
-      }
-    },
-    {
-      "items" : [ 5 ],
-      "localization" : "Centro",
-      "user" : {
-        "mail" : "ldonato22@gmail.com",
-        "name" : "Leonardo Donato"
-      }
-    },
-    {
-      "items" : [ 2 ],
-      "localization" : "Centro",
-      "user" : {
-        "mail" : "lucianarodriguezcaldeira@hotmail.com",
-        "name" : "LUCIANA"
-      }
-    },
-    {
-      "items" : [ 
-        4 
-      ],
-      "localization" : "Centro",
-      "user" : {
-        "mail" : "sergiomatavos@gmail.com",
-        "name" : "Sergio Matavós"
-      }
-    },
-    {
-      "items" : [ 14, 16 ],
-      "localization" : "Centro",
-      "user" : {
-        "mail" : "cevales@gmail.com",
-        "name" : "Esteban Vales"
-      }
-    },
-    {
-      "items" : [ 3, 7, 4 ],
-      "localization" : "Centro",
-      "user" : {
-        "mail" : "cristian.a.caterino@gmail.com",
-        "name" : "Cristian Caterino"
-      }
-    },
-    {
-      "items" : [ 3 ],
-      "localization" : "Centro",
-      "user" : {
-        "mail" : "seba81@gmail.com",
-        "name" : "Sebastian Schiuma"
-      }
-    },
-    {
-      "items" : [ 4, 7 ],
-      "localization" : "Centro",
-      "user" : {
-        "mail" : "german.kuber@outlook.com",
-        "name" : "German Kuber"
-      }
-    },
-    {
-      "items" : [ 2, 4, 6 ],
-      "localization" : "Centro",
-      "user" : {
-        "mail" : "schivardi1@outlook.com",
-        "name" : "Franco Schivardi"
-      }
-    },
-    {
-      "items" : [ 3, 5 ],
-      "localization" : "Centro",
-      "user" : {
-        "mail" : "estherquispe@gmail.com",
-        "name" : "Esther Quispe"
-      }
-    },
-    {
-      "items" : [ 14 ],
-      "localization" : "Oeste",
-      "user" : {
-        "mail" : "fernando.frecha@gmail.com",
-        "name" : "Fernando Javier Frecha"
-      }
-    },
-    {
-      "items" : [ 12 ],
-      "localization" : "Oeste",
-      "user" : {
-        "mail" : "fvilela@gmail.com",
-        "name" : "Felipe"
-      }
-    },
-  ]
+     {
+    "items" : [ 4 ],
+    "localization" : "Centro",
+    "user" : {
+      "mail" : "cristian.a.caterino@gmail.com",
+      "name" : "Cristian Caterino"
+    }
+  },
+  {
+    "items" : [ 12 ],
+    "localization" : "Oeste",
+    "user" : {
+      "mail" : "fvilela@gmail.com",
+      "name" : "Felipe"
+    }
+  },
+  {
+    "items" : [ 5, 6, 7 ],
+    "localization" : "Centro",
+    "user" : {
+      "mail" : "m.d.sola@gmail.com",
+      "name" : "Marcelo sola"
+    }
+  },
+  {
+    "items" : [ 7 ],
+    "localization" : "Centro",
+    "user" : {
+      "mail" : "marcelolema@yahoo.com.ar",
+      "name" : "Marce Lema"
+    }
+  },
+  {
+    "items" : [ 2, 7 ],
+    "localization" : "Centro",
+    "user" : {
+      "mail" : "aslegui@gmail.com",
+      "name" : "Alejandro Leguizamon"
+    }
+  },
+  {
+    "items" : [ 3, 5 ],
+    "localization" : "Centro",
+    "user" : {
+      "mail" : "sanguinmartin@gmail.com",
+      "name" : "Martin Sanguin"
+    }
+  },
+  {
+    "items" : [ 1, 2, 3, 4, 5, 6, 7 ],
+    "localization" : "Centro",
+    "user" : {
+      "mail" : "lula@hotmail.com",
+      "name" : "Esteban Quito"
+    }
+  },
+  {
+    "items" : [ 5 ],
+    "localization" : "Centro",
+    "user" : {
+      "mail" : "ldonato22@gmail.com",
+      "name" : "Leonardo Donato"
+    }
+  },
+  {
+    "items" : [ 2 ],
+    "localization" : "Centro",
+    "user" : {
+      "mail" : "lucianarodriguezcaldeira@hotmail.com",
+      "name" : "LUCIANA"
+    }
+  },
+  {
+    "items" : [ 4 ],
+    "localization" : "Centro",
+    "user" : {
+      "mail" : "sergiomatavos@gmail.com",
+      "name" : "Sergio Matavós"
+    }
+  },
+  {
+    "items" : [ 14, 16 ],
+    "localization" : "Centro",
+    "user" : {
+      "mail" : "cevales@gmail.com",
+      "name" : "Esteban Vales"
+    }
+  },
+  {
+    "items" : [ 3, 7 ],
+    "localization" : "Centro",
+    "user" : {
+      "mail" : "cristian.a.caterino@gmail.com",
+      "name" : "Cristian Caterino"
+    }
+  },
+  {
+    "items" : [ 3 ],
+    "localization" : "Centro",
+    "user" : {
+      "mail" : "seba81@gmail.com",
+      "name" : "Sebastian Schiuma"
+    }
+  },
+  {
+    "items" : [ 4, 7 ],
+    "localization" : "Centro",
+    "user" : {
+      "mail" : "german.kuber@outlook.com",
+      "name" : "German Kuber"
+    }
+  },
+  {
+    "items" : [ 2, 4, 6 ],
+    "localization" : "Centro",
+    "user" : {
+      "mail" : "schivardi1@outlook.com",
+      "name" : "Franco Schivardi"
+    }
+  },
+  {
+    "items" : [ 3, 5 ],
+    "localization" : "Centro",
+    "user" : {
+      "mail" : "estherquispe@gmail.com",
+      "name" : "Esther Quispe"
+    }
+  },
+  {
+    "items" : [ 12, 13, 14 ],
+    "localization" : "Oeste",
+    "user" : {
+      "mail" : "ing.nicolas.battaglia@gmail.com",
+      "name" : "Pruebq"
+    }
+  },
+  {
+    "items" : [ 14 ],
+    "localization" : "Oeste",
+    "user" : {
+      "mail" : "fernando.frecha@gmail.com",
+      "name" : "Fernando Javier Frecha"
+    }
+  },
+  {
+    "items" : [ 17 ],
+    "localization" : "Norte",
+    "user" : {
+      "mail" : "briian.gomez@hotmail.com",
+      "name" : "Brian Gomez Pereyra"
+    }
+  },
+  {
+    "items" : [ 17 ],
+    "localization" : "Norte",
+    "user" : {
+      "mail" : "briian.gomez@hotmail.com",
+      "name" : "Brian Gomez Pereyra"
+    }
+  },
+  {
+    "items" : [ 17 ],
+    "localization" : "Norte",
+    "user" : {
+      "mail" : "victornahuel.grycuktraicovich@uai.com",
+      "name" : "Victor Grycuk"
+    }
+  },
+  {
+    "items" : [ 15, 16, 17 ],
+    "localization" : "Norte",
+    "user" : {
+      "mail" : "martinromano1995@gmail.com",
+      "name" : "Martin Romano"
+    }
+  },
+  {
+    "items" : [ 15, 17 ],
+    "localization" : "Norte",
+    "user" : {
+      "mail" : "victorgrycuk@gmail.com",
+      "name" : "Victor Grycuk"
+    }
+  },
+  {
+    "items" : [ 15, 17 ],
+    "localization" : "Norte",
+    "user" : {
+      "mail" : "victorgrycuk@gmail.com",
+      "name" : "Victor Grycuk"
+    }
+  },
+  {
+    "items" : [ 16 ],
+    "localization" : "Norte",
+    "user" : {
+      "mail" : "lucasbarrosarg@gmail.com",
+      "name" : "Lucas Barros"
+    }
+  },
+  {
+    "items" : [ 16 ],
+    "localization" : "Norte",
+    "user" : {
+      "mail" : "EdgardoRuben.Bertazzoni@Alumnos.uai.edu.ar",
+      "name" : "Edgardo Bertazzoni"
+    }
+  },
+  {
+    "items" : [ 16 ],
+    "localization" : "Norte",
+    "user" : {
+      "mail" : "maximilianosincovich@hotmail.com",
+      "name" : "Maximiliano Sincovich"
+    }
+  },
+  {
+    "items" : [ 1, 2, 7 ],
+    "localization" : "Centro",
+    "user" : {
+      "mail" : "facundoparra96@gmail.com",
+      "name" : "Facundo Parra"
+    }
+  },
+  {
+    "items" : [ 3, 7 ],
+    "localization" : "Centro",
+    "user" : {
+      "mail" : "emillceruiz@rocketmail.com",
+      "name" : "Emilce Ruiz"
+    }
+  },
+  {
+    "items" : [ 3, 5 ],
+    "localization" : "Centro",
+    "user" : {
+      "mail" : "daperezp1@gmail.com",
+      "name" : "Daniel Andrés perez"
+    }
+  },
+  {
+    "items" : [ 5 ],
+    "localization" : "Centro",
+    "user" : {
+      "mail" : "tomas.schiter@hotmail.com",
+      "name" : "Tomás Schiter"
+    }
+  },
+  {
+    "items" : [ 17 ],
+    "localization" : "Norte",
+    "user" : {
+      "mail" : "cristianmanuel.gigena@alumnos.uai.edu.ar",
+      "name" : "Cristian Gigena"
+    }
+  },
+  {
+    "items" : [ 2 ],
+    "localization" : "Centro",
+    "user" : {
+      "mail" : "ezemione@gmail.com",
+      "name" : "Ezequiel Mione"
+    }
+  },
+  {
+    "items" : [ 16 ],
+    "localization" : "Norte",
+    "user" : {
+      "mail" : "arielofalcon@hotmail.com",
+      "name" : "Ariel Falcon"
+    }
+  },
+  {
+    "items" : [ 16 ],
+    "localization" : "Norte",
+    "user" : {
+      "mail" : "amarsero@gmail.com",
+      "name" : "Agustin Marsero"
+    }
+  },
+  {
+    "items" : [ 7 ],
+    "localization" : "Centro",
+    "user" : {
+      "mail" : "caedvare@hotmail.com",
+      "name" : "Carlos vanegas"
+    }
+  },
+  {
+    "items" : [ 16, 17 ],
+    "localization" : "Norte",
+    "user" : {
+      "mail" : "marcelanoemibanega@gmail.com",
+      "name" : "Marcela Noemi Banega"
+    }
+  },
+  {
+    "items" : [ 6, 7 ],
+    "localization" : "Centro",
+    "user" : {
+      "mail" : "leonardo.maggini@hotmail.com",
+      "name" : "Leonardo Maggini"
+    }
+  },
+  {
+    "items" : [ 16, 17 ],
+    "localization" : "Norte",
+    "user" : {
+      "mail" : "edgardobertazzoni@gmail.com",
+      "name" : "Edgardo Bertazzoni"
+    }
+  }
+ ]
 }

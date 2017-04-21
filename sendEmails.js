@@ -4,21 +4,23 @@ var mandrillTransport = require('nodemailer-mandrill-transport');
 // node variable
 var dotenv  = require('dotenv').config();
 
+var count = 0;
+
 var jsonfile = require('jsonfile');
 
-function getRegistry(){
-    var data = jsonfile.readFileSync('./App/assets/registry.json');
+var getRegistry = function(){
+    return jsonfile.readFileSync('./App/assets/registry.json');
 }
 
-function readProjects(){
-	return jsonfile.readFileSync('./App/assets/projects.json');
+var GetProyect = function(key, dat){
+	var jsonFile = jsonfile.readFileSync('./App/assets/projects.json');
+
+
+	var proj = jsonFile.projects.filter((item) => item.id == key)
+	sendEmail(proj[0], dat.user)
 }
 
-function sendEmail() {
-
-
-	console.log(process.env.GmailUser)
-	console.log(process.env.GmailPass)
+var sendEmail = function(proj, user) {
 
 	var transport = nodemailer.createTransport({
 		service: 'Gmail',
@@ -29,31 +31,49 @@ function sendEmail() {
 	});
 	
 		
-	var bdy = "El alumno <br/><br/>Nombre: " + data.user.name +"<br/>Mail: " + data.user.mail +"<br/><br/> Se interesÃ³ en los siguientes proyectos: <br/><br/>" + projects;
+	var bdy = "El alumno <br/><br/>Nombre: " + user.name +"<br/>Mail: " + user.mail +"<br/><br/> Se interesó en : <br/><br/>" + proj.name;
 	
 	
 	 var mailOptions = {
 	    from: 'UAI <uai.case.info@gmail.com>', 
-	    to: dest,
-		cc:"1carlos.neil@uai.edu.ar; 1medevincenzi@uai.edu.ar",
-	    subject: "PRESENTACIÃ“N DE CÃ‰LULAS TECNOLÃ“GICAS EXTERNAS",
-	    text: data.user.location + '-' + data.user.project,
+	    to: proj.mail,
+		// to: 'manuel@bitflowlabs.com',
+		cc:"carlos.neil@uai.edu.ar; medevincenzi@uai.edu.ar",
+	    subject: "PRESENTACIÓN DE CÉLULAS TECNOLÓGICAS EXTERNAS",
+	    text: user.localization + '-' + proj.name,
 		html: bdy
 	};	
-	
-	 transport.sendMail(mailOptions, function(error, info){
+
+	let miPrimeraPromise = new Promise((resolve, reject) => {
+			 transport.sendMail(mailOptions, function(error, info){
 	    
-		if(error){
-	        console.log(error);
-	    }else{
-			console.log(info)
-	    };
-	});    
+				if(error){
+					console.log(error);
+				}else{
+					count = count + 1
+					console.log({ text: "SUCCESS", payload : info, Count : count });
+					resolve(info)
+				};
+			});    
+		});
+
+	miPrimeraPromise.then((successMessage) => {
+		console.log("GOOD")
+	});
+	
+	
   
 	
 	
 	
 }
 
+var data = getRegistry();
 
-console.log(readProjects())
+console.log(data.mails.length)
+
+data.mails.map((dat)=>{
+	dat.items.map((item)=>{
+		GetProyect(item, dat)
+	})
+})
